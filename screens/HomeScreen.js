@@ -67,7 +67,7 @@ const HomeScreen = ({ navigation }) => {
         style={styles.serviceContent}
         onPress={() => navigation.navigate('ServiceDetail', { service: item })}
       >
-        <Text style={styles.serviceName} numberOfLines={2} ellipsizeMode="tail">{item.name}</Text>
+        <Text style={styles.serviceName} numberOfLines={1} ellipsizeMode="tail">{item.name}</Text>
         <Text style={styles.servicePrice}>{item.price} ₫</Text>
       </TouchableOpacity>
       <Menu>

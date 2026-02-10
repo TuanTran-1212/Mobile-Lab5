@@ -33,19 +33,19 @@ const EditServiceScreen = ({ navigation, route }) => {
       </View>
       <View style={styles.content}>
         <Input
-          label="Tên dịch vụ *"
+          label="Service Name *"
           value={name}
           onChangeText={setName}
           placeholder="Enter service name"
         />
         <Input
-          label="Giá *"
+          label="Price *"
           value={price}
           onChangeText={setPrice}
           placeholder="Enter price"
           keyboardType="numeric"
         />
-        <Button title="Cập nhật" onPress={handleUpdate} />
+        <Button title="Update" onPress={handleUpdate} />
       </View>
     </View>
   );
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: '#FF69B4',
+    backgroundColor: '#EF506B',
   },
   backArrow: {
     fontSize: 24,

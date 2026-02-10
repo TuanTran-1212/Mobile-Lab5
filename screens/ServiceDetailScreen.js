@@ -56,7 +56,7 @@ const ServiceDetailScreen = ({ navigation, route }) => {
           </MenuTrigger>
           <MenuOptions>
             <MenuOption onSelect={() => navigation.navigate('EditService', { service: serviceDetail })}>
-              <Text>Edit</Text>
+              <Text>Update</Text>
             </MenuOption>
             <MenuOption onSelect={handleDelete}>
               <Text style={{ color: 'red' }}>Delete</Text>
